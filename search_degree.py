@@ -7,7 +7,7 @@ Author: Maksim Nudga
 
 from math import pi
 
-CIRCLE_RADIUS = 360
+CIRCLE = 360
 
 
 def get_degree(radius: float, time: float, accel: float, start_sp: float):
@@ -25,4 +25,4 @@ def get_degree(radius: float, time: float, accel: float, start_sp: float):
     """
     distance = start_sp * time + (accel * (time ** 2) / 2)
     circle = 2 * pi * radius
-    return round(((distance % circle) / circle * CIRCLE_RADIUS), 3)
+    return round(((distance % circle) / circle * CIRCLE), 3)
