@@ -2,6 +2,7 @@
 """Test module for function get_degree from search_degree."""
 
 import pytest
+
 from search_degree import get_degree
 
 test_data = [
